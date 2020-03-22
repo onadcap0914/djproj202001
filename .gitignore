@@ -1,5 +1,6 @@
 *.pyc
 *.db
 *.log
+*.sqlite*
 
 *local_settings.py
