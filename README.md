@@ -1,2 +1,2 @@
 # djproj202001
-Django Project: Credit Management System
+Django Project: Loan Management System
