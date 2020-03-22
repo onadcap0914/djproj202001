@@ -2,9 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounting/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/membership/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584875241876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System.">
+      <created>1584883947706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584883947737</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,16 +158,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a new branch for baseline_test_01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new branch for baseline_test_01" />
+    <MESSAGE value="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System." />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584875229709">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584883938401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584875229709" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584883410411">
       <screen x="0" y="0" width="1366" height="728" />
