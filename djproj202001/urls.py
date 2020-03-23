@@ -17,8 +17,9 @@ Including another URLconf
 [1] onad | 20200323 | Activate Python Django Admin Interface
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),    #[1]
+    path('', include('membership.urls'))
 ]
