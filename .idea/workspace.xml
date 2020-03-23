@@ -1,43 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accounting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounting/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/membership/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_setting/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/views.py" afterDir="false" />
+    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +118,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -166,11 +136,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584883938401">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584940823303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584875229709" />
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584940823303" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584883410411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -187,13 +157,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883410411" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584875311298">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584940545471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584875311298" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1584875708088">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584940545471" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1584940565422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1584875708088" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1584940565422" />
   </component>
 </project>
