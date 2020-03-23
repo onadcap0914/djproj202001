@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -19,6 +17,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -110,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584883947737</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Listed the different modules of the project: Membership, Accounting, Transaction, System Setting and Report">
+      <created>1584940937565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584940937565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,18 +135,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a new branch for baseline_test_01" />
     <MESSAGE value="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System." />
+    <MESSAGE value="Listed the different modules of the project: Membership, Accounting, Transaction, System Setting and Report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listed the different modules of the project: Membership, Accounting, Transaction, System Setting and Report" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584940823303">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1584940935953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584940823303" />
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584940935953" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584883410411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -157,13 +164,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883410411" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584940545471">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584941100150">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584940545471" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1584940565422">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584941100150" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584940971749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1584940565422" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1584941270774">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1584941270774" />
   </component>
 </project>
