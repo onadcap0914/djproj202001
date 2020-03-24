@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 """
 [1] onad | 20200323 | Activate Python Django Admin Interface
+[2] onad | 20200323 | Create base.html template (initial draft)
 """
 import os
 
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'djproj202001.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates', 'membership/templates',
+                 'accounting/templates', 'transaction/templates',
+                 'system_setting/templates', 'report/templates', ],     #[2]
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,5 +121,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = BASE_DIR      #[2]
 STATIC_URL = '/static/'
+
+#[2]
+# Additional locations of static files
+STATICFILES_DIRS = (
+	('assets', os.path.join(BASE_DIR, 'static/')),
+)

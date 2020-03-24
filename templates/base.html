@@ -1,0 +1,34 @@
+<!--
+[2] onad | 20200324 | Create base.html template (initial draft)
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Base Template{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %} ">
+</head>
+<body>
+<div id="page">
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin/">Admin</a></li>
+            <li><a href="/membership/">Membership</a></li>
+            <li><a href="/accounting/">Accounting</a></li>
+            <li><a href="/transaction/">Transaction</a></li>
+            <li><a href="/system_setting/">System Setting</a></li>
+            <li><a href="/report/">Report</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    <div id="content">
+        {% block content %}
+        This is the content area.
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
