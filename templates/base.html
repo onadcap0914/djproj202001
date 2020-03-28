@@ -1,5 +1,6 @@
 <!--
-[2] onad | 20200324 | Create base.html template (initial draft)
+[2] onad | 20200324 | Create base_bootstrap_hdr_ftr.html template (initial draft)
+[3] onad | 20200326 | Update base_bootstrap_hdr_ftr.html and other templates to suit screens draft
 -->
 {% load static %}
 <!DOCTYPE html>
@@ -7,20 +8,21 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}My Base Template{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %} ">
+    <link rel="stylesheet" type="text/css" href="{% static "assets/css/default.css" %}">
 </head>
 <body>
 <div id="page">
     <div id="sidebar">
         {% block sidebar %}
         <ul>
-            <li><a href="/">Home</a></li>
+            <!--[3]-->
+            <li><a href="{% url 'site_home' %}">Home</a></li>
             <li><a href="/admin/">Admin</a></li>
-            <li><a href="/membership/">Membership</a></li>
-            <li><a href="/accounting/">Accounting</a></li>
-            <li><a href="/transaction/">Transaction</a></li>
-            <li><a href="/system_setting/">System Setting</a></li>
-            <li><a href="/report/">Report</a></li>
+            <li><a href="{% url 'membership_home' %}">Membership</a></li>
+            <li><a href="{% url 'accounting_home' %}">Accounting</a></li>
+            <li><a href="{% url 'transaction_home' %}">Transaction</a></li>
+            <li><a href="{% url 'system_setting_home' %}">System Setting</a></li>
+            <li><a href="{% url 'report_home' %}">Report</a></li>
         </ul>
         {% endblock %}
     </div>

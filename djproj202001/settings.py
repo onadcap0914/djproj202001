@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 """
 [1] onad | 20200323 | Activate Python Django Admin Interface
-[2] onad | 20200323 | Create base.html template (initial draft)
+[2] onad | 20200323 | Create base_bootstrap_hdr_ftr.html template (initial draft)
 """
 import os
 

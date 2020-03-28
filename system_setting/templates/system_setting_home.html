@@ -1,22 +1,22 @@
 <!--
 [2] onad | 20200324 | created file
+[3] onad | 20200326 | improvement of [2]
 -->
 {% extends "base.html" %}
-{% block title %}System Setting{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 {% block content %}
-<div><h1>System Setting</h1></div>
+<div><h1>{{ title }}</h1></div>
 <div>
-    <p>This is the SYSTEM SETTING HOMEPAGE.</p>
+    <p>This is the {% filter upper%}{{ title }}{% endfilter %} HOMEPAGE.</p>
 </div>
 {% endblock %}
-
 {% block sidebar %}
         <ul>
-            <li><a href="/home/">Home</a></li>
+            <li><a href="{% url 'site_home' %}">Home</a></li>
             <li><a href="/admin/">Admin</a></li>
-            <li><a href="/membership/">Membership</a></li>
-            <li><a href="/accounting/">Accounting</a></li>
-            <li><a href="/transaction/">Transaction</a></li>
-            <li><a href="/report/">Report</a></li>
+            <li><a href="{% url 'membership_home' %}">Membership</a></li>
+            <li><a href="{% url 'accounting_home' %}">Accounting</a></li>
+            <li><a href="{% url 'transaction_home' %}">Transaction</a></li>
+            <li><a href="{% url 'report_home' %}">Report</a></li>
         </ul>
 {% endblock %}
