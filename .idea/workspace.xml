@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="[5] onad | 20200330 | Application login functionality&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('accounts/', include('django.contrib.auth.urls')),  #[5]&#10;...&#10;]&#10;&#10;&#10;django.contrib.auth.urls:&#10;accounts/login/ [name='login']&#10;accounts/logout/ [name='logout']&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;templates/registration/login.html&#10;---------------------------------&#10;&#10;some changes in home.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djproj202001/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djproj202001/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585568806446</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[5] onad | 20200330 | Application login functionality&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('accounts/', include('django.contrib.auth.urls')),  #[5]&#10;...&#10;]&#10;&#10;&#10;django.contrib.auth.urls:&#10;accounts/login/ [name='login']&#10;accounts/logout/ [name='logout']&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;templates/registration/login.html&#10;---------------------------------&#10;&#10;some changes in home.html">
+      <created>1585572911311</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585572911311</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,50 +203,51 @@
     <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Created Home page." />
     <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality" />
     <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality&#10;&#10;djproj202001/views.py&#10;---------------------&#10;from django.shortcuts import render, redirect   #[4]&#10;from django.contrib.auth.forms import UserCreationForm      #[4]&#10;...&#10;def signup(request):    #[4]&#10;    title = 'CEU CC Management System User Registration'&#10;    if request.method == 'POST':&#10;        form = UserCreationForm(request.POST)&#10;        if form.is_valid():&#10;            form.save()&#10;            return redirect('site_home')&#10;    else:&#10;        form = UserCreationForm()&#10;&#10;    return render(request, 'registration/signup.html', {'title': title,&#10;                                                        'form': form})&#10;&#10;&#10;&#10;&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('signup/', views.signup, name='signup'),   #[4]&#10;...&#10;]&#10;&#10;&#10;templates/registration/signup.html&#10;----------------------------------" />
-    <option name="LAST_COMMIT_MESSAGE" value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality&#10;&#10;djproj202001/views.py&#10;---------------------&#10;from django.shortcuts import render, redirect   #[4]&#10;from django.contrib.auth.forms import UserCreationForm      #[4]&#10;...&#10;def signup(request):    #[4]&#10;    title = 'CEU CC Management System User Registration'&#10;    if request.method == 'POST':&#10;        form = UserCreationForm(request.POST)&#10;        if form.is_valid():&#10;            form.save()&#10;            return redirect('site_home')&#10;    else:&#10;        form = UserCreationForm()&#10;&#10;    return render(request, 'registration/signup.html', {'title': title,&#10;                                                        'form': form})&#10;&#10;&#10;&#10;&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('signup/', views.signup, name='signup'),   #[4]&#10;...&#10;]&#10;&#10;&#10;templates/registration/signup.html&#10;----------------------------------" />
+    <MESSAGE value="[5] onad | 20200330 | Application login functionality&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('accounts/', include('django.contrib.auth.urls')),  #[5]&#10;...&#10;]&#10;&#10;&#10;django.contrib.auth.urls:&#10;accounts/login/ [name='login']&#10;accounts/logout/ [name='logout']&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;templates/registration/login.html&#10;---------------------------------&#10;&#10;some changes in home.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="[5] onad | 20200330 | Application login functionality&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('accounts/', include('django.contrib.auth.urls')),  #[5]&#10;...&#10;]&#10;&#10;&#10;django.contrib.auth.urls:&#10;accounts/login/ [name='login']&#10;accounts/logout/ [name='logout']&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;templates/registration/login.html&#10;---------------------------------&#10;&#10;some changes in home.html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585568845809">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585574978628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585568845809" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585574978628" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1585053287832">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585053287832" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585572556162">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585576032911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585572556162">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585576032911" />
+    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585576032911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585572556161">
+    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585576032911" />
+    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585576032911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585572556161" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585572556162">
+    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585576032911" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585576032911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585576032911" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1585032781530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585032781530" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585568897449">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585575042816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585568897449" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585575042816" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585567549148">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

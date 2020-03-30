@@ -3,6 +3,7 @@
 [3] onad | 20200326 | improvement of [2]
 [4] onad | 20200330 | Application Home page and sign up functionality
 [5] onad | 20200330 | Application login functionality
+[6] onad | 20200330 | Application logout functionality
 -->
 {% extends "base_bootstrap_hdr_stky-ftr.html" %}
 
@@ -14,17 +15,21 @@
 
             <ul class="navbar-nav">
                 <!--[5]-->
-                {% if user.username is NONE %}
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'site_home' %}">{{user.username}}<span class="sr-only">(current)</span></a>
+                </li>
+                <!--[6]-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                </li>
+                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">Log In <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <!--[4]-->
                     <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'site_home' %}">{{user.username}}<span class="sr-only">(current)</span></a>
                 </li>
                 {% endif %}
             </ul>

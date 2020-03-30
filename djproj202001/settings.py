@@ -133,3 +133,6 @@ STATICFILES_DIRS = (
 
 #[5]
 LOGIN_REDIRECT_URL = 'site_home'
+
+#[6]
+LOGOUT_REDIRECT_URL = 'site_home'
