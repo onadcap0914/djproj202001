@@ -17,6 +17,7 @@ Including another URLconf
 [1] onad | 20200323 | Activate Python Django Admin Interface
 [2] onad | 20200324 | Adding the modules' urls
 [3] onad | 20200326 | Improvement of [2]
+[4] onad | 20200330 | Application Home page and sign up functionality
 """
 from django.contrib import admin
 from django.urls import path, include
@@ -25,6 +26,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),    #[1]
     path('', views.home, name='site_home'),     #[3]
+    path('signup/', views.signup, name='signup'),   #[4]
     path('membership/', include('membership.urls')),    #[2] start
     path('accounting/', include('accounting.urls')),
     path('transaction/', include('transaction.urls')),

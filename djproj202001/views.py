@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect   #[4]
+from django.contrib.auth.forms import UserCreationForm      #[4]
 """
 [2] onad | 20200324 | File first update
 [3] onad | 20200326 | improvement of [2]
@@ -10,4 +11,18 @@ from django.shortcuts import render
 def home(request):
     title = 'CEU Credit Cooperative Management System'
     return render(request, 'home.html', {'title': title})   #[3] [4]
+
+
+def signup(request):    #[4]
+    title = 'CEU CC Management System User Registration'
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('site_home')
+    else:
+        form = UserCreationForm()
+
+    return render(request, 'registration/signup.html', {'title': title,
+                                                        'form': form})
 
