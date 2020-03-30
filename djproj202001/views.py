@@ -9,4 +9,4 @@ from django.shortcuts import render
 def home(request):
     # title = 'CEU CCI - Loan Management System'
     # return render(request, 'home.html', {'title': title})   #[3]
-    return render(request, 'base_bootstrap_hdr_stky-ftr_sbar.html')
+    return render(request, 'base_bootstrap_hdr_stky-ftr.html')

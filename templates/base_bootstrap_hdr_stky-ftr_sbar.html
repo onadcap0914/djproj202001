@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>{% block title %}CEUCCI Base Template: Header and Sticky Footer{% endblock %}</title>
+    <title>{% block title %}CEUCCI Base Template: Header, Sidebar and Sticky Footer{% endblock %}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sticky-footer-navbar/">
 
@@ -54,16 +54,25 @@
     <link href="{% static "assets/css/dashboard.css" %}" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
-{% block header %}
+
 <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <a class="navbar-brand col-2" href="#">[LOGO]</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+
+        <div class="collapse navbar-collapse col-10" id="navbarCollapse">
+            <span class="navbar-brand mr-auto col-3">CEU Credit Cooperative Management System</span>
+
+            {% block header_menu %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -75,19 +84,20 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            {% endblock %}
+
+            {% block header_profile %}
+            <span class="navbar-nav text-light">Profile</span>
+            {% endblock %}
         </div>
     </nav>
 </header>
-{% endblock %}
 
 
 <div class="container-fluid">
     <div class="row">
 
+        {% block sidebar %}
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
@@ -163,10 +173,10 @@
                 </ul>
             </div>
         </nav>
-
+        {% endblock %}
 
         <!-- Begin page content -->
-<!--        col-md-9 ml-sm-auto col-lg-10 px-4 / flex-shrink-0-->
+        <!--col-md-9 ml-sm-auto col-lg-10 px-4 / flex-shrink-0-->
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
             <div class="container-fluid">
@@ -184,21 +194,32 @@
         </main>
     </div>
 </div>
+
+
+
 <footer class="footer fixed-bottom flex-md-nowrap mt-auto p-2">
-    <div class="container">
+    <div class="container col-12 text-center">
+
         {% block footer %}
         <span class="text-muted">Place sticky footer content here.</span>
         {% endblock %}
+
     </div>
 </footer>
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
 <script>
     window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
 </script>
-<script src="{% static "assets/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+<script src="{% static "assets/bootstrap/4.4.1/js/bootstrap.bundle.min.js" %}"
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="{% static "assets/js/dashboard.js" %}"></script>
+
 </body>
 </html>
