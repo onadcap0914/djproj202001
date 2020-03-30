@@ -18,6 +18,7 @@ Including another URLconf
 [2] onad | 20200324 | Adding the modules' urls
 [3] onad | 20200326 | Improvement of [2]
 [4] onad | 20200330 | Application Home page and sign up functionality
+[5] onad | 20200330 | Application login functionality
 """
 from django.contrib import admin
 from django.urls import path, include
@@ -27,6 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),    #[1]
     path('', views.home, name='site_home'),     #[3]
     path('signup/', views.signup, name='signup'),   #[4]
+    path('accounts/', include('django.contrib.auth.urls')),  #[5]
     path('membership/', include('membership.urls')),    #[2] start
     path('accounting/', include('accounting.urls')),
     path('transaction/', include('transaction.urls')),

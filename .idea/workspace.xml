@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djproj202001/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djproj202001/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djproj202001/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585546524340</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality">
+      <created>1585568806446</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585568806446</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,50 +194,52 @@
     <MESSAGE value="[3] onad | 20200325 | Improvement of [2] / Loading of bootstrap4 into the system (as static file/s) / Update base.html and other templates to suit screens draft / 1st draft of base pages" />
     <MESSAGE value="[3] onad | 20200325 | Improvement of [2] &#10;&#10;bootstrap4 files copied to djproj202001\static\css and djproj202001\static\js&#10;run this to add the statis files in the djproj202001\static\ --&gt; djproj202001\assets\&#10;&gt;python manage.py collectstatic&#10;&#10;CEUCCI Base Template: Header and Sticky Footer: base_bootstrap_hdr_stky-ftr.html/sticky-footer-navbar.css&#10;&#10;CEUCCI Base Template: Header, Sidebar and Sticky Footer: base_bootstrap_hdr_stky-ftr_sbar.html/dashboard.css/dashboard.js&#10;&#10;CEUCCI Base Template: Header, Sticky Footer and Dashboard: base_bootstrap_hdr_stky-ftr_sbar_dbrd.html/dashboard.css/dashboard.js" />
     <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Created Home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Created Home page." />
+    <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality" />
+    <MESSAGE value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality&#10;&#10;djproj202001/views.py&#10;---------------------&#10;from django.shortcuts import render, redirect   #[4]&#10;from django.contrib.auth.forms import UserCreationForm      #[4]&#10;...&#10;def signup(request):    #[4]&#10;    title = 'CEU CC Management System User Registration'&#10;    if request.method == 'POST':&#10;        form = UserCreationForm(request.POST)&#10;        if form.is_valid():&#10;            form.save()&#10;            return redirect('site_home')&#10;    else:&#10;        form = UserCreationForm()&#10;&#10;    return render(request, 'registration/signup.html', {'title': title,&#10;                                                        'form': form})&#10;&#10;&#10;&#10;&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('signup/', views.signup, name='signup'),   #[4]&#10;...&#10;]&#10;&#10;&#10;templates/registration/signup.html&#10;----------------------------------" />
+    <option name="LAST_COMMIT_MESSAGE" value="[4] onad | 20200330 | Application Home page and sign up functionality&#10;* Sign Up functionality&#10;&#10;djproj202001/views.py&#10;---------------------&#10;from django.shortcuts import render, redirect   #[4]&#10;from django.contrib.auth.forms import UserCreationForm      #[4]&#10;...&#10;def signup(request):    #[4]&#10;    title = 'CEU CC Management System User Registration'&#10;    if request.method == 'POST':&#10;        form = UserCreationForm(request.POST)&#10;        if form.is_valid():&#10;            form.save()&#10;            return redirect('site_home')&#10;    else:&#10;        form = UserCreationForm()&#10;&#10;    return render(request, 'registration/signup.html', {'title': title,&#10;                                                        'form': form})&#10;&#10;&#10;&#10;&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('signup/', views.signup, name='signup'),   #[4]&#10;...&#10;]&#10;&#10;&#10;templates/registration/signup.html&#10;----------------------------------" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585568747453">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585568845809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585568747453" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585568845809" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1585053287832">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585053287832" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585559987669">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585572556162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585559987669" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585559987667">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
+    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585572556162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585559987667" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585559987666">
+    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
+    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585572556161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585559987666" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585559987668">
+    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585572556161" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585572556162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585559987668" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585572556162" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1585032781530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585032781530" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585542367927">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585568897449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585542367927" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585568897449" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585567549148">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

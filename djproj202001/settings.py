@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 [1] onad | 20200323 | Activate Python Django Admin Interface
 [2] onad | 20200323 | Create base_bootstrap_hdr_ftr.html template (initial draft)
+[5] onad | 20200330 | Application login functionality
 """
 import os
 
@@ -129,3 +130,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
 	('assets', os.path.join(BASE_DIR, 'static/')),
 )
+
+#[5]
+LOGIN_REDIRECT_URL = 'site_home'
