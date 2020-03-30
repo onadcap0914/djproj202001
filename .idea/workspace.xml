@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/sticky-footer-navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/sticky-footer-navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djproj202001/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/sticky-footer-navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/sticky-footer-navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar_dbrd.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar_dbrd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585395543501</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[3] onad | 20200325 | Improvement of [2] &#10;&#10;bootstrap4 files copied to djproj202001\static\css and djproj202001\static\js&#10;run this to add the statis files in the djproj202001\static\ --&gt; djproj202001\assets\&#10;&gt;python manage.py collectstatic&#10;&#10;CEUCCI Base Template: Header and Sticky Footer: base_bootstrap_hdr_stky-ftr.html/sticky-footer-navbar.css&#10;&#10;CEUCCI Base Template: Header, Sidebar and Sticky Footer: base_bootstrap_hdr_stky-ftr_sbar.html/dashboard.css/dashboard.js&#10;&#10;CEUCCI Base Template: Header, Sticky Footer and Dashboard: base_bootstrap_hdr_stky-ftr_sbar_dbrd.html/dashboard.css/dashboard.js">
+      <created>1585542346715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585542346715</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,50 +175,51 @@
     <MESSAGE value="Created a new branch for baseline_test_01&#10;Updated django project description from Credit Management System to LOan Management System." />
     <MESSAGE value="Listed the different modules of the project: Membership, Accounting, Transaction, System Setting and Report" />
     <MESSAGE value="[3] onad | 20200325 | Improvement of [2] / Loading of bootstrap4 into the system (as static file/s) / Update base.html and other templates to suit screens draft / 1st draft of base pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="[3] onad | 20200325 | Improvement of [2] / Loading of bootstrap4 into the system (as static file/s) / Update base.html and other templates to suit screens draft / 1st draft of base pages" />
+    <MESSAGE value="[3] onad | 20200325 | Improvement of [2] &#10;&#10;bootstrap4 files copied to djproj202001\static\css and djproj202001\static\js&#10;run this to add the statis files in the djproj202001\static\ --&gt; djproj202001\assets\&#10;&gt;python manage.py collectstatic&#10;&#10;CEUCCI Base Template: Header and Sticky Footer: base_bootstrap_hdr_stky-ftr.html/sticky-footer-navbar.css&#10;&#10;CEUCCI Base Template: Header, Sidebar and Sticky Footer: base_bootstrap_hdr_stky-ftr_sbar.html/dashboard.css/dashboard.js&#10;&#10;CEUCCI Base Template: Header, Sticky Footer and Dashboard: base_bootstrap_hdr_stky-ftr_sbar_dbrd.html/dashboard.css/dashboard.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="[3] onad | 20200325 | Improvement of [2] &#10;&#10;bootstrap4 files copied to djproj202001\static\css and djproj202001\static\js&#10;run this to add the statis files in the djproj202001\static\ --&gt; djproj202001\assets\&#10;&gt;python manage.py collectstatic&#10;&#10;CEUCCI Base Template: Header and Sticky Footer: base_bootstrap_hdr_stky-ftr.html/sticky-footer-navbar.css&#10;&#10;CEUCCI Base Template: Header, Sidebar and Sticky Footer: base_bootstrap_hdr_stky-ftr_sbar.html/dashboard.css/dashboard.js&#10;&#10;CEUCCI Base Template: Header, Sticky Footer and Dashboard: base_bootstrap_hdr_stky-ftr_sbar_dbrd.html/dashboard.css/dashboard.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585395530452">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585546462634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585395530452" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585546462634" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1585053287832">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585053287832" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585541614976">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom" timestamp="1585545923259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585541614976" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585541614972">
+    <state width="1345" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585545923259" />
+    <state width="1345" height="128" key="GridCell.Tab.0.center" timestamp="1585545923259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585541614972" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585541614972">
+    <state width="1345" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585545923259" />
+    <state width="1345" height="128" key="GridCell.Tab.0.left" timestamp="1585545923259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585541614972" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585541614976">
+    <state width="1345" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585545923259" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right" timestamp="1585545923259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585541614976" />
+    <state width="1345" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585545923259" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1585032781530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585032781530" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584941100150">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585542367927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584941100150" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585542367927" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585033275591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -224,10 +228,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1585394215910">
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1585544772606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024924608" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585394215910" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585544772606" />
   </component>
 </project>

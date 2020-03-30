@@ -1,22 +1,31 @@
 <!--
 [2] onad | 20200324 | created file
 [3] onad | 20200326 | improvement of [2]
+[4] onad | 20200330 | Application Home page and sign up functionality
 -->
-{% extends "base.html" %}
+{% extends "base_bootstrap_hdr_stky-ftr.html" %}
+
+
 {% block title %}{{ title }}{% endblock %}
-{% block content %}
-<div><h1>{{ title }}</h1></div>
-<div>
-    <p>This is the {% filter upper%}{{ title }}{% endfilter %} HOMEPAGE.</p>
-</div>
+
+
+{% block header_profile %}
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
 {% endblock %}
-{% block sidebar %}
-        <ul>
-            <li><a href="/admin/">Admin</a></li>
-            <li><a href="{% url 'membership_home' %}">Membership</a></li>
-            <li><a href="{% url 'accounting_home' %}">Accounting</a></li>
-            <li><a href="{% url 'transaction_home' %}">Transaction</a></li>
-            <li><a href="{% url 'system_setting_home' %}">System Setting</a></li>
-            <li><a href="{% url 'report_home' %}">Report</a></li>
-        </ul>
+
+
+{% block content %}
+        <h1 class="mt-5 text-center">Welcome Message</h1>
+        <p class="lead">About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative.
+            About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative.
+            About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative.
+            About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative.
+        </p>
 {% endblock %}
