@@ -54,8 +54,10 @@
     <link href="{% static "assets/css/sticky-footer-navbar.css" %}" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
+
 <header>
     <!-- Fixed navbar -->
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
         <a class="navbar-brand col-2" href="{% url 'site_home' %}">[LOGO]</a>
@@ -85,8 +87,28 @@
             {% endblock %}
 
             {% block header_profile %}
-            <span class="navbar-nav text-light">Profile</span>
+            <ul class="navbar-nav">
+                <!--[5]-->
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'site_home' %}">{{user.username}}<span class="sr-only">(current)</span></a>
+                </li>
+                <!--[6]-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Log In <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <!--[4]-->
+                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                </li>
+                {% endif %}
+            </ul>
             {% endblock %}
+
         </div>
     </nav>
 </header>

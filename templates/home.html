@@ -11,31 +11,6 @@
 {% block title %}{{ title }}{% endblock %}
 
 
-{% block header_profile %}
-
-            <ul class="navbar-nav">
-                <!--[5]-->
-                {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'site_home' %}">{{user.username}}<span class="sr-only">(current)</span></a>
-                </li>
-                <!--[6]-->
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">Log In <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <!--[4]-->
-                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
-                </li>
-                {% endif %}
-            </ul>
-{% endblock %}
-
-
 {% block content %}
         <h1 class="mt-5 text-center">Welcome Message</h1>
         <p class="lead">About CEU Credit Cooperative. About CEU Credit Cooperative. About CEU Credit Cooperative.
