@@ -1,6 +1,7 @@
 <!--
 [5] onad | 20200330 | Application login functionality
 [7] onad | 20200331 | Password change functionality
+[8] onad | 20200331 | Password reset functionality
 -->
 {% extends "base_bootstrap_hdr_stky-ftr.html" %}
 
@@ -34,5 +35,6 @@
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Log In</button>
+            <a href="{% url 'password_reset' %}">Forgot your password?</a>
         </form>
 {% endblock %}

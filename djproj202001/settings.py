@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 [1] onad | 20200323 | Activate Python Django Admin Interface
 [2] onad | 20200323 | Create base_bootstrap_hdr_ftr.html template (initial draft)
 [5] onad | 20200330 | Application login functionality
+[6] onad | 20200330 | Application Logout functionality
+[8] onad | 20200331 | Password reset functionality
 """
 import os
 
@@ -136,3 +138,9 @@ LOGIN_REDIRECT_URL = 'site_home'
 
 #[6]
 LOGOUT_REDIRECT_URL = 'site_home'
+
+#[8]
+#Simulate email backend, add this line in the settings.py.
+#Comment out this line in the prod environment
+#>python manage.py sendtestemail test_user01@example.com
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
