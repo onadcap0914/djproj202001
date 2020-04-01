@@ -15,6 +15,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 [5] onad | 20200330 | Application login functionality
 [6] onad | 20200330 | Application Logout functionality
 [8] onad | 20200331 | Password reset functionality
+[9] onad | 20200401 | Protected/secured views
 """
 import os
 
@@ -133,8 +134,8 @@ STATICFILES_DIRS = (
 	('assets', os.path.join(BASE_DIR, 'static/')),
 )
 
-#[5]
-LOGIN_REDIRECT_URL = 'site_home'
+#[5] [9]
+LOGIN_REDIRECT_URL = 'logged_in'
 
 #[6]
 LOGOUT_REDIRECT_URL = 'site_home'

@@ -3,6 +3,7 @@
 <html lang="en" class="h-100">
 <!--
 [3] onad | 20200326 | Update base.html and other templates to suit screens draft
+[9] onad | 20200401 | Protected/secured views
 -->
 <head>
     <meta charset="utf-8">
@@ -86,8 +87,28 @@
             </ul>
             {% endblock %}
 
+            <!--[9]-->
             {% block header_profile %}
-            <span class="navbar-nav text-light">Profile</span>
+            <ul class="navbar-nav">
+                <!--[5]-->
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logged_in' %}">{{user.username}}<span class="sr-only">(current)</span></a>
+                </li>
+                <!--[6]-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Log In <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <!--[4]-->
+                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                </li>
+                {% endif %}
+            </ul>
             {% endblock %}
         </div>
     </nav>

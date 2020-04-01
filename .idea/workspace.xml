@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user_home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djproj202001/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djproj202001/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djproj202001/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_bootstrap_hdr_stky-ftr_sbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +73,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/accounting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\templates" />
       <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\accounting" />
       <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\transaction" />
       <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\system_setting" />
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585641816214</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[8] onad | 20200331 | Password reset functionality&#10;--------------------------------------------------&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;Simulate email backend, add this line in the settings.py:&#10;EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'&#10;&#10;*python manage.py sendtestemail test_user01@example.com&#10;&#10;templates/registration/login.html&#10;templates/registration/password_reset_form.html&#10;templates/registration/password_reset_done.html&#10;templates/registration/password_reset_confirm.html&#10;templates/registration/password_reset_complete.html&#10;&#10;&gt;python manage.py shell&#10;&gt;&gt;&gt; from django.contrib.auth.models import User&#10;&gt;&gt;&gt; u=User.objects.get(username='test_user01')&#10;&gt;&gt;&gt; u.email='test_user01@example.com'&#10;&gt;&gt;&gt; u.save()&#10;&gt;&gt;&gt; exit()">
+      <created>1585647185419</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585647185419</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,62 +230,67 @@
     <MESSAGE value="[5] onad | 20200330 | Application login functionality&#10;djproj202001/urls.py&#10;--------------------&#10;urlpatterns = [&#10;...&#10;   path('accounts/', include('django.contrib.auth.urls')),  #[5]&#10;...&#10;]&#10;&#10;&#10;django.contrib.auth.urls:&#10;accounts/login/ [name='login']&#10;accounts/logout/ [name='logout']&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;templates/registration/login.html&#10;---------------------------------&#10;&#10;some changes in home.html" />
     <MESSAGE value="[6] onad | 20200330 | Application Logout functionality&#10;------------------------------------------------------&#10;templates/home.html&#10;&#10;settings.py, add:&#10;LOGOUT_REDIRECT_URL = 'site_home'" />
     <MESSAGE value="[7] onad | 20200331 | Password change functionality&#10;------------------------------------------------------&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;&#10;templates/registration/password_change_form.html&#10;------------------------------------------------&#10;templates/registration/password_change_done.html&#10;------------------------------------------------&#10;&#10;simplified the html codes in the other html files&#10;&#10;To run: 127.0.0.1:8000/accounts/password_change&#10;or create a link later --&gt; {% url 'password_change' %}" />
-    <option name="LAST_COMMIT_MESSAGE" value="[7] onad | 20200331 | Password change functionality&#10;------------------------------------------------------&#10;accounts/password_change/ [name='password_change']&#10;accounts/password_change/done/ [name='password_change_done']&#10;&#10;templates/registration/password_change_form.html&#10;------------------------------------------------&#10;templates/registration/password_change_done.html&#10;------------------------------------------------&#10;&#10;simplified the html codes in the other html files&#10;&#10;To run: 127.0.0.1:8000/accounts/password_change&#10;or create a link later --&gt; {% url 'password_change' %}" />
+    <MESSAGE value="[8] onad | 20200331 | Password reset functionality&#10;--------------------------------------------------&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;Simulate email backend, add this line in the settings.py:&#10;EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'&#10;&#10;*python manage.py sendtestemail test_user01@example.com&#10;&#10;templates/registration/login.html&#10;templates/registration/password_reset_form.html&#10;templates/registration/password_reset_done.html&#10;templates/registration/password_reset_confirm.html&#10;templates/registration/password_reset_complete.html&#10;&#10;&gt;python manage.py shell&#10;&gt;&gt;&gt; from django.contrib.auth.models import User&#10;&gt;&gt;&gt; u=User.objects.get(username='test_user01')&#10;&gt;&gt;&gt; u.email='test_user01@example.com'&#10;&gt;&gt;&gt; u.save()&#10;&gt;&gt;&gt; exit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="[8] onad | 20200331 | Password reset functionality&#10;--------------------------------------------------&#10;accounts/password_reset/ [name='password_reset']&#10;accounts/password_reset/done/ [name='password_reset_done']&#10;accounts/reset/&lt;uidb64&gt;/&lt;token&gt;/ [name='password_reset_confirm']&#10;accounts/reset/done/ [name='password_reset_complete']&#10;&#10;Simulate email backend, add this line in the settings.py:&#10;EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'&#10;&#10;*python manage.py sendtestemail test_user01@example.com&#10;&#10;templates/registration/login.html&#10;templates/registration/password_reset_form.html&#10;templates/registration/password_reset_done.html&#10;templates/registration/password_reset_confirm.html&#10;templates/registration/password_reset_complete.html&#10;&#10;&gt;python manage.py shell&#10;&gt;&gt;&gt; from django.contrib.auth.models import User&#10;&gt;&gt;&gt; u=User.objects.get(username='test_user01')&#10;&gt;&gt;&gt; u.email='test_user01@example.com'&#10;&gt;&gt;&gt; u.save()&#10;&gt;&gt;&gt; exit()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584883262318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585641810621">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585647180575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585641810621" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585647180575" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1585053287832">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585053287832" />
-    <state width="1345" height="222" key="GridCell.Tab.0.bottom" timestamp="1585644667982">
+    <state width="1345" height="125" key="GridCell.Tab.0.bottom" timestamp="1585715253154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585657004306" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585644667982" />
-    <state width="1345" height="222" key="GridCell.Tab.0.center" timestamp="1585644667982">
+    <state width="1345" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585715253154" />
+    <state width="1345" height="125" key="GridCell.Tab.0.center" timestamp="1585715253154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="125" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585657004304" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585644667982" />
-    <state width="1345" height="222" key="GridCell.Tab.0.left" timestamp="1585644667982">
+    <state width="1345" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585715253154" />
+    <state width="1345" height="125" key="GridCell.Tab.0.left" timestamp="1585715253154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="125" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585657004303" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585644667982" />
-    <state width="1345" height="222" key="GridCell.Tab.0.right" timestamp="1585644667982">
+    <state width="1345" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585715253154" />
+    <state width="1345" height="125" key="GridCell.Tab.0.right" timestamp="1585715253154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="125" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585657004305" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585644667982" />
+    <state width="1345" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585715253154" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1585032781530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585032781530" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585641949543">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585647223662">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585641949543" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585567549148">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585647223662" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585711393102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585567549148" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585711393102" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584940971749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1585642132769">
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1585711581647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024924608" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585642132769" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585711581647" />
   </component>
 </project>
