@@ -2,12 +2,23 @@
 [5] onad | 20200330 | Application login functionality
 [7] onad | 20200331 | Password change functionality
 [8] onad | 20200331 | Password reset functionality
+[10] onad | 20200401 | Bootstrap4 forms
 -->
 {% extends "base.html" %}
 
+{% load crispy_forms_tags %} <!--[10]-->
 
 {% block title %}{{ title }}{% endblock %}
 
+{% block style_extension %}
+form .alert ul li {
+  list-style: none;
+}
+form .alert ul {
+  padding: 0;
+  margin: 0;
+}
+{% endblock %}
 
 {% block header_profile %}
     <ul class="navbar-nav">
@@ -30,11 +41,23 @@
 
 
 {% block content %}
-        <h1 class="mt-4">User Log In</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Log In</button>
-            <a href="{% url 'password_reset' %}">Forgot your password?</a>
-        </form>
+    <div class="row justify-content-center mt-4">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="mt-4" >User Log In</h1>
+                    <form method="post" novalidate>
+                        {% csrf_token %}
+                        <!--[10]-->
+                        <!--{{ form.as_p }}-->
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <a href="{% url 'password_reset' %}" class="btn btn-link">Forgot your password?</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 {% endblock %}

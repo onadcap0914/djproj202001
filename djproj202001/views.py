@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect   #[4]
 from django.contrib.auth.forms import UserCreationForm      #[4]
 from django.contrib.auth.decorators import login_required   #[9]
+from django.contrib.auth.models import User
 
 """
 [2] onad | 20200324 | File first update
@@ -12,8 +13,11 @@ from django.contrib.auth.decorators import login_required   #[9]
 
 
 def home(request):
-    title = 'CEU Credit Cooperative Management System'
-    return render(request, 'home.html', {'title': title})   #[3] [4]
+    if request.user.is_authenticated:
+        return redirect('logged_in')
+    else:
+        title = 'CEU Credit Cooperative Management System'
+        return render(request, 'home.html', {'title': title})   #[3] [4]
 
 
 def signup(request):    #[4]

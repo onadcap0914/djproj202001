@@ -16,6 +16,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 [6] onad | 20200330 | Application Logout functionality
 [8] onad | 20200331 | Password reset functionality
 [9] onad | 20200401 | Protected/secured views
+[10] onad | 20200401 | Bootstrap4 and crispy forms
 """
 import os
 
@@ -32,7 +33,7 @@ SECRET_KEY = '#b1beb09=_en$oe8%_p1^^3n2kmkayzjb59@0w4)4sx7_&@soy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.0.14', ]
 
 
 # Application definition
@@ -44,7 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',     #[10]
+    'djproj202001',
 ]
+
+#[10]
+#Django crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -145,3 +152,4 @@ LOGOUT_REDIRECT_URL = 'site_home'
 #Comment out this line in the prod environment
 #>python manage.py sendtestemail test_user01@example.com
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
