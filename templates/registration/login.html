@@ -3,7 +3,7 @@
 [7] onad | 20200331 | Password change functionality
 [8] onad | 20200331 | Password reset functionality
 -->
-{% extends "base_bootstrap_hdr_stky-ftr.html" %}
+{% extends "base.html" %}
 
 
 {% block title %}{{ title }}{% endblock %}
@@ -30,7 +30,7 @@
 
 
 {% block content %}
-        <h1 class="mt-5 text-center">User Log In</h1>
+        <h1 class="mt-4">User Log In</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 """
 [1] onad | 20200323 | Activate Python Django Admin Interface
-[2] onad | 20200323 | Create base_bootstrap_hdr_ftr.html template (initial draft)
+[2] onad | 20200323 | Create x_base_bootstrap_hdr_ftr.html template (initial draft)
 [5] onad | 20200330 | Application login functionality
 [6] onad | 20200330 | Application Logout functionality
 [8] onad | 20200331 | Password reset functionality

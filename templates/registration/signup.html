@@ -1,7 +1,7 @@
 <!--
 [4] onad | 20200330 | Application Home page and sign up functionality
 -->
-{% extends "base_bootstrap_hdr_stky-ftr.html" %}
+{% extends "base.html" %}
 
 
 {% block title %}{{ title }}{% endblock %}
@@ -17,7 +17,7 @@
 
 
 {% block content %}
-        <h1 class="mt-5 text-center">User Registration</h1>
+        <h1 class="mt-4">User Registration</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}

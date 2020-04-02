@@ -83,6 +83,7 @@ body {
  * Navbar
  */
 
+/*
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -96,17 +97,9 @@ body {
   border-width: 0;
   border-radius: 0;
 }
+*/
 
-.form-control-dark {
-  color: #fff;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
-}
 
-.form-control-dark:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
 
 /*
  * Footer
@@ -132,3 +125,4 @@ main > .container {
 code {
   font-size: 80%;
 }
+
