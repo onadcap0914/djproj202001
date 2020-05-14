@@ -4,13 +4,7 @@
     <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djproj202001/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585816978841</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[10] onad | 20200401 | Bootstrap4 forms&#10;Sign up form&#10;Password reset form&#10;Password reset confirm form&#10;Password change form">
+      <created>1585976204889</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585976204889</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated requirements.txt">
+      <created>1586156467742</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586156467805</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +271,9 @@
     <MESSAGE value="[9] onad | 20200401 | Protected/secured views&#10;---------------------------------------------&#10; Created logic for regular user log in and ridirection to authenticated user home page.&#10; TO DO: identify different user permissions to define different user login types and implement this in the app.&#10;***&#10;templates/user_home.html&#10;djproj202001/views.py&#10;djproj202001/settings.py&#10;djproj202001/urls.py&#10;templates/base_bootstrap_hdr_stky-ftr.html&#10;templates/base_bootstrap_hdr_stky-ftr_sbar.html&#10;***&#10;views.py&#10;--------&#10;from django.contrib.auth.decorators import login_required   #[9]&#10;...&#10;@login_required&#10;def user_home(request):&#10;    return render(request, 'user_home.html')" />
     <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;* did clean up/housekeeping merged multiple base htmls to just one (base.html)" />
     <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;* log in form" />
-    <option name="LAST_COMMIT_MESSAGE" value="[10] onad | 20200401 | Bootstrap4 forms&#10;* log in form" />
+    <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;Sign up form&#10;Password reset form&#10;Password reset confirm form&#10;Password change form" />
+    <MESSAGE value="updated requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585813581515">
@@ -271,63 +281,67 @@
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585813581515" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585816969782">
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587096567304">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1587096567304" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1586156454888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585816969782" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586156454888" />
     <state x="417" y="127" key="EnvironmentVariablesDialog" timestamp="1585813564230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="127" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585813564230" />
-    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1585053287832">
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1587116547681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585053287832" />
-    <state width="1345" height="195" key="GridCell.Tab.0.bottom" timestamp="1585811005644">
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587116547681" />
+    <state width="1345" height="195" key="GridCell.Tab.0.bottom" timestamp="1585976357262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585811005644" />
-    <state width="1345" height="195" key="GridCell.Tab.0.center" timestamp="1585811005643">
+    <state width="1345" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585976357262" />
+    <state width="1345" height="195" key="GridCell.Tab.0.center" timestamp="1585976357215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="125" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585811005643" />
-    <state width="1345" height="195" key="GridCell.Tab.0.left" timestamp="1585811005642">
+    <state width="1345" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585976357215" />
+    <state width="1345" height="195" key="GridCell.Tab.0.left" timestamp="1585976357215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="125" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745697986" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585811005642" />
-    <state width="1345" height="195" key="GridCell.Tab.0.right" timestamp="1585811005644">
+    <state width="1345" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585976357215" />
+    <state width="1345" height="195" key="GridCell.Tab.0.right" timestamp="1585976357231">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="125" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585811005644" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1585032781530">
+    <state width="1345" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585976357231" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1589345523075">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585032781530" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1585716202124">
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589345523075" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586156492384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585716202124" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1585792066594">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586156492384" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1589429856881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792066594" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589429856881" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584940971749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1585723437464">
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1589429928674">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024924608" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585723437464" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1589429928674" />
   </component>
 </project>
