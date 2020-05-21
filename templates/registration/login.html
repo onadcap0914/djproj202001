@@ -1,0 +1,62 @@
+<!--
+[5] onad | 20200330 | Application login functionality
+[7] onad | 20200331 | Password change functionality
+[8] onad | 20200331 | Password reset functionality
+[10] onad | 20200401 | Bootstrap4 forms
+-->
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %} <!--[10]-->
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block style_extension %}
+form .alert ul li {
+  list-style: none;
+}
+form .alert ul {
+  padding: 0;
+  margin: 0;
+}
+{% endblock %}
+
+{% block header_profile %}
+    <ul class="navbar-nav">
+        {% if user.is_authenticated %}  <!--[7]-->
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'site_home' %}">{{user.username}}<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+        </li>
+        {% else %}
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'signup' %}">Sign Up<span class="sr-only">(current)</span></a>
+            </li>
+
+        {% endif %}
+    </ul>
+{% endblock %}
+
+
+{% block content %}
+    <div class="row justify-content-center mt-4">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="mt-4" >User Log In</h1>
+                    <form method="post" novalidate>
+                        {% csrf_token %}
+                        <!--[10]-->
+                        <!--{{ form.as_p }}-->
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <a href="{% url 'password_reset' %}" class="btn btn-link">Forgot your password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
