@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="">
+    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="sync files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586156467805</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[11] onad | 20200514 | Fix Bootstrap error when app runs in other pc &amp; remove side navbar">
+      <created>1589431579354</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589431579354</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +280,8 @@
     <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;* log in form" />
     <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;Sign up form&#10;Password reset form&#10;Password reset confirm form&#10;Password change form" />
     <MESSAGE value="updated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
+    <MESSAGE value="[11] onad | 20200514 | Fix Bootstrap error when app runs in other pc &amp; remove side navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585813581515">
@@ -285,11 +293,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1587096567304" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1586156454888">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1590390391762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586156454888" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590390391762" />
     <state x="417" y="127" key="EnvironmentVariablesDialog" timestamp="1585813564230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -326,22 +334,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589345523075" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586156492384">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589431596142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586156492384" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1589429856881">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589431596142" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590388741839">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589429856881" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590388741839" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584940971749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1589429928674">
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1590388895397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024924608" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1589429928674" />
+    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590388895397" />
   </component>
 </project>

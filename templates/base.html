@@ -6,7 +6,7 @@
 [9] onad | 20200401 | Protected/secured views
 [10] onad | 20200401 | Bootstrap4 forms
 [11] onad | 20200514 | Fix Bootstrap error when app runs in other pc & remove side navbar
-
+[12] onad | 20200525 | Create menu nav for Campus
 -->
 <head>
     <meta charset="utf-8">
@@ -53,9 +53,28 @@
         }
       }
 
+        /*[12] Submenu fix => make them appear */
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position:relative;
+        }
+        .dropdown-submenu>.dropdown-menu {
+            top:0;
+            left:100%;
+            margin-top:-6px;
+        }
+
+
+
       {% block style_extension %}
 
       {% endblock %}
+
+
+
 
 
     </style>
@@ -89,12 +108,49 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">Link</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--                </li>-->
+                <!--[12]-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSys" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        System Setting
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownSystemSetup">
+                        <ul class="pl-0">
+                            <li class="dropdown-submenu" style="list-style-type:none">
+                                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Company</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Campus</a></li>
+                                    <li><a class="dropdown-item" href="#">Department</a></li>
+                                    <li><a class="dropdown-item" href="#">Members</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="pl-0">
+                            <li class="dropdown-submenu" style="list-style-type:none">
+                                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Loans</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Loans Submenu 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Loans Submenu 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Loans Submenu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="dropdown-item" href="#">Item 3</a>
+                        <a class="dropdown-item" href="#">Item 4</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">Item 5</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+
+
+
+
             </ul>
             {% endblock %}
 
@@ -189,6 +245,9 @@
         crossorigin="anonymous"></script>
 <script>
     window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
+
+
+
 
 
 </script>
