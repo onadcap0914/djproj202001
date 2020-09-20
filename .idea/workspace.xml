@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="sync files">
+    <list default="true" id="872493c6-f476-43c7-b3bb-6f6dc052b538" name="Default Changelist" comment="[12] onad | 20200525 | Create menu nav for Campus">
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/datatables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DataTables-1.10.21/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/datatables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DataTables-1.10.21/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/templates/campus_home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_setting/templates/upsert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_datatable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djproj202001/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djproj202001/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djproj202001/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_setting/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_setting/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_setting/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_setting/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_setting/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_setting/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +106,7 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -59,7 +137,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -68,16 +145,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/djproj202001" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\djproj202001" />
+      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\system_setting\templates" />
+      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\static\DataTables-1.10.21\js" />
+      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\static\DataTables-1.10.21\css" />
       <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox03\venv\djproj202001\templates" />
-      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\accounting" />
-      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\transaction" />
-      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\system_setting" />
-      <recent name="C:\Users\onadc\PycharmProjects\my_dj_projects\sandbox01\venv\djproj202001\report" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,6 +185,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -245,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589431579354</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[12] onad | 20200525 | Create menu nav for Campus">
+      <created>1590396924017</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590396924048</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,13 +338,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -281,75 +365,22 @@
     <MESSAGE value="[10] onad | 20200401 | Bootstrap4 forms&#10;Sign up form&#10;Password reset form&#10;Password reset confirm form&#10;Password change form" />
     <MESSAGE value="updated requirements.txt" />
     <MESSAGE value="[11] onad | 20200514 | Fix Bootstrap error when app runs in other pc &amp; remove side navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="[12] onad | 20200525 | Create menu nav for Campus" />
+    <option name="LAST_COMMIT_MESSAGE" value="[12] onad | 20200525 | Create menu nav for Campus" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585813581515">
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600565299043">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1600565299043" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1592063445530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883262318" />
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585813581515" />
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587096567304">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592063445530" />
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1595601203098">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1587096567304" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1590390391762">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1584883938401" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590390391762" />
-    <state x="417" y="127" key="EnvironmentVariablesDialog" timestamp="1585813564230">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="417" y="127" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585813564230" />
-    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1587116547681">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587116547681" />
-    <state width="1345" height="195" key="GridCell.Tab.0.bottom" timestamp="1585976357262">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585976357262" />
-    <state width="1345" height="195" key="GridCell.Tab.0.center" timestamp="1585976357215">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="125" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585976357215" />
-    <state width="1345" height="195" key="GridCell.Tab.0.left" timestamp="1585976357215">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="125" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745697986" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965207" />
-    <state width="1345" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585976357215" />
-    <state width="1345" height="195" key="GridCell.Tab.0.right" timestamp="1585976357231">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="125" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1585745698002" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024965223" />
-    <state width="1345" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585976357231" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1589345523075">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589345523075" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589431596142">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589431596142" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1590388741839">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590388741839" />
-    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584940971749">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584940971749" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog" timestamp="1590388895397">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585024924608" />
-    <state x="372" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590388895397" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592059108786" />
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1595601203098" />
   </component>
 </project>

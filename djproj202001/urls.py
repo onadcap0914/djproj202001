@@ -1,3 +1,7 @@
+from django.contrib import admin
+from django.urls import path, include
+from . import views
+
 """djproj202001 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -21,19 +25,17 @@ Including another URLconf
 [5] onad | 20200330 | Application login functionality
 [9] onad | 20200401 | Protected/secured views
 """
-from django.contrib import admin
-from django.urls import path, include
-from . import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),    #[1]
-    path('', views.home, name='site_home'),     #[3]
-    path('signup/', views.signup, name='signup'),   #[4]
-    path('accounts/', include('django.contrib.auth.urls')),  #[5]
-    path('logged_in/', views.user_home, name='logged_in'),     #[9]
-    path('membership/', include('membership.urls')),    #[2] start
+    path('admin/', admin.site.urls),    # [1]
+    path('', views.home, name='site_home'),     # [3]
+    path('signup/', views.signup, name='signup'),   # [4]
+    path('accounts/', include('django.contrib.auth.urls')),  # [5]
+    path('logged_in/', views.user_home, name='logged_in'),     # [9]
+    path('membership/', include('membership.urls')),    # [2] start
     path('accounting/', include('accounting.urls')),
     path('transaction/', include('transaction.urls')),
     path('system_setting/', include('system_setting.urls')),
-    path('report/', include('report.urls')),    #[2] end
+    path('report/', include('report.urls')),    # [2] end
 ]

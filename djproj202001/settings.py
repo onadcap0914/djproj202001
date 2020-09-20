@@ -17,12 +17,12 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 [8] onad | 20200331 | Password reset functionality
 [9] onad | 20200401 | Protected/secured views
 [10] onad | 20200401 | Bootstrap4 and crispy forms
+[13] onad | 20200525 | Create Campus MVT with CRUD
 """
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -35,22 +35,22 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '192.168.0.14', ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',     #[1]
+    'django.contrib.admin',  # [1]
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',     #[10]
+    'crispy_forms',  # [10]
     'djproj202001',
+    'system_setting'  # [13]
 ]
 
-#[10]
-#Django crispy forms
+# [10]
+# Django crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
@@ -70,7 +70,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates', 'membership/templates',
                  'accounting/templates', 'transaction/templates',
-                 'system_setting/templates', 'report/templates', ],     #[2]
+                 'system_setting/templates', 'report/templates', ],  # [2]
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,17 +85,24 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djproj202001.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_ceuccms',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -115,7 +122,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -129,27 +135,25 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = BASE_DIR      #[2]
+STATIC_ROOT = BASE_DIR  # [2]
 STATIC_URL = '/static/'
 
-#[2]
+# [2]
 # Additional locations of static files
 STATICFILES_DIRS = (
-	('assets', os.path.join(BASE_DIR, 'static/')),
+    ('assets', os.path.join(BASE_DIR, 'static/')),
 )
 
-#[5] [9]
+# [5] [9]
 LOGIN_REDIRECT_URL = 'logged_in'
 
-#[6]
+# [6]
 LOGOUT_REDIRECT_URL = 'site_home'
 
-#[8]
-#Simulate email backend, add this line in the settings.py.
-#Comment out this line in the prod environment
-#>python manage.py sendtestemail test_user01@example.com
+# [8]
+# Simulate email backend, add this line in the settings.py.
+# Comment out this line in the prod environment
+# >python manage.py sendtestemail test_user01@example.com
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-

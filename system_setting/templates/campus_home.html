@@ -1,0 +1,180 @@
+<!--
+[13] onad | 20200525 | Create Campus MVT with CRUD
+-->
+{% extends "base_datatable.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content_authenticated %}
+
+<div class="container row p-0 m-0">
+    <div class="col-12 row p-4">
+        <div class="col-4 text-left">
+            <h2 class="text-info">{{ title }}</h2>
+        </div>
+        <div class="col-sm">
+            <a href="{% url 'campus_upsert' %}" class="btn btn-primary form-control text-white btn-xs">Add New Campus</a>
+        </div>
+        <div class="col-sm">
+            <a href="#" class="btn btn-secondary form-control text-white btn-xs">Print</a>
+        </div>
+    </div>
+    <!--TODO: [onad] BRANCH: PRINT function-->
+
+    <div class="col-12 border pt-4">
+        <table id="campus_dt_load" class="table table-responsive table-hover table-condensed small" width="100%">
+            <thead>
+                <tr>
+                    <!--<th><input type="checkbox" id="checkall" /></th>-->
+                    <th>Campus Code</th>
+                    <th>Campus Name</th>
+                    <th>Campus Address</th>
+                    <th>Registered By</th>
+                    <th>Registered Date</th>
+                    <th>Updated By</th>
+                    <th>Updated Date</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for campus in campuses %}
+                <td>{{ campus.campus_code }}</td>
+                <td>{{ campus.campus_name }}</td>
+                <td>{{ campus.campus_add }}</td>
+                <td>{{ campus.registered_by }}</td>
+                <td>{{ campus.registered_date }}</td>
+                <td>{{ campus.updated_by }}</td>
+                <td>{{ campus.updated_date }}</td>
+                <td>
+                    <p data-placement="top" data-toggle="tooltip" title="Edit">
+                        <a href="/edit/{{ campus_code }}" class="btn btn-primary btn-xs"
+                           data-title="Edit" data-toggle="modal" data-target="#edit" >
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p data-placement="top" data-toggle="tooltip" title="Delete">
+                        <a href="/delete/{{ campus_code }}" class="btn btn-danger btn-xs"
+                           data-title="Delete" data-toggle="modal" data-target="#delete" >
+                            <span class="glyphicon glypicon-trash"></span>
+                        </a>
+                    </p>
+                </td>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+
+    $(document).ready(function() {
+        $('#campus_dt_load').DataTable({
+            "aLengthMenu": [[3,5,10,25,-1], [3,5,10,25, "All"]],
+            "iDisplayLength": 3
+        });
+    });
+
+
+<!--    var dataTable;-->
+<!--    $(document).ready(function () {-->
+<!--        moment.updateLocale(moment.locale(), { invalidDate: "" });-->
+<!--        loadDataTable();-->
+<!--    });-->
+
+<!--    function loadDataTable() {-->
+<!--        dataTable = $('#campus_dt_load').DataTable({-->
+<!--            "scrollX": true,-->
+<!--            "order": [[0,"asc"]],-->
+<!--            "ajax": {-->
+<!--                "url": "/regions/getall",-->
+<!--                "type": "GET",-->
+<!--                "datatype": "json",-->
+<!--            },-->
+<!--            "columnDefs": [-->
+<!--                {-->
+<!--                    targets: [2,3,4,5],-->
+<!--                    className: 'dt-body-center'-->
+<!--                },-->
+<!--                {-->
+<!--                    "targets": [0,1,2,3,4,5],-->
+<!--                    "className": 'dt-head-center'-->
+<!--                },-->
+<!--                {-->
+<!--                    "targets": [3,5],-->
+<!--                    "render": function (data) {-->
+<!--                        return moment(data).format('MM/DD/YYYY');-->
+<!--                    }-->
+<!--                },-->
+<!--                {-->
+<!--                    "targets": 6,-->
+<!--                    "data": "region_Code",-->
+<!--                    "render": function (data, type, row, meta) {-->
+<!--                        return `<div class="text-center">-->
+<!--                                <a href="Regions/Upsert?region_code=${data}" class='btn btn-success text-white btn-sm'-->
+<!--                                    style='cursor:pointer;width:60px;'>Update-->
+<!--                                </a>-->
+<!--                                &nbsp;-->
+<!--                                <a class='btn btn-danger text-white btn-sm' style='cursor:pointer;width:60px;'-->
+<!--                                    onclick=Delete('/Regions/Delete?region_code=${data}')>Delete-->
+<!--                                </a>-->
+<!--                                </div>`;-->
+<!--                    }-->
+<!--                }-->
+<!--            ],-->
+<!--            "columns": [-->
+<!--                { "data": "region_Code", "width": "15%" },-->
+<!--                { "data": "region_Name", "width": "15%" },-->
+<!--                { "data": "registered_By", "width": "13%" },-->
+<!--                { "data": "registered_Date", "width": "13%" },-->
+<!--                { "data": "updated_By", "width": "13%" },-->
+<!--                { "data": "updated_Date", "width": "13%" },-->
+<!--                { "data": "region_Code", "width": "18%" }-->
+<!--            ],-->
+<!--            "language": {-->
+<!--                "emptyTable": "No data found."-->
+<!--            }, "width": "100%"-->
+<!--        });-->
+
+<!--        $("#Region_dt_load").on('column-sizing.dt', function (e, settings) {-->
+<!--            $(".dataTables_scrollHeadInner").css("width", "100%");-->
+<!--        });-->
+<!--    }-->
+
+<!--    function Delete(url) {-->
+<!--        Swal.fire({-->
+<!--            title: "Region Delete Confirmation",-->
+<!--            text: "Are you sure? Deleted Region cannot be recovered.",-->
+<!--            icon: 'warning',-->
+<!--            showCancelButton: true,-->
+<!--            confirmButtonColor: '#3085d6',-->
+<!--            cancelButtonColor: '#d33',-->
+<!--            confirmButtonText: 'Yes, delete it!',-->
+<!--            type: "warning",-->
+<!--        }).then((willDelete) => {-->
+<!--            if (willDelete.value) {-->
+<!--                $.ajax({-->
+<!--                    type: "DELETE",-->
+<!--                    url: url,-->
+<!--                    success: function (data) {-->
+<!--                        if (data.success) {-->
+<!--                            toastr.success(data.message);-->
+<!--                            dataTable.ajax.reload();-->
+<!--                        } else {-->
+<!--                            toastr.error(data.message);-->
+<!--                        }-->
+<!--                    }-->
+<!--                });-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
+</script>
+
+{% endblock %}
