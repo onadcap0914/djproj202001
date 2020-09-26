@@ -16,16 +16,16 @@ class Campus(models.Model):
     campus_add = models.CharField(
         max_length=200, verbose_name="Campus Address"
     )
-    registered_by = models.CharField(
-        max_length=100,
-        verbose_name="Registered By"
-    )
-    registered_date = models.DateField(auto_now_add=True)
-    updated_by = models.CharField(
-        max_length=100,
-        verbose_name="Updated By"
-    )
-    updated_date = models.DateTimeField(auto_now=False)
+    # registered_by = models.CharField(
+    #     max_length=100,
+    #     verbose_name="Registered By"
+    # )
+    # registered_date = models.DateField(auto_now=False)
+    # updated_by = models.CharField(
+    #     max_length=100,
+    #     verbose_name="Updated By"
+    # )
+    # updated_date = models.DateTimeField(auto_now=False)
 
     def __str__(self):
         return self.campus_code

@@ -15,48 +15,20 @@
                 <h2>{{ title }}</h2>
                 <br/>
 
-            <!--<div class="container border col-md-12" style="padding: 30px;">-->
-
-                <form method="POST" class="post-form" action="upsert">
+                <form method="POST" class="post-form" action="upsert" autocomplete="off">
                     {% csrf_token %}
                     {{ form|crispy }}
-
-            <!--        {{form.registered_by}}-->
-            <!--        {{form.updated_by}}-->
-            <!--        {{form.updated_date}}-->
-
-            <!--        <div class="form-group row">-->
-            <!--            <div class="col-sm-3 text-right">-->
-            <!--                <label class="col-form-label">Campus Code:</label>-->
-            <!--            </div>-->
-            <!--            <div class="col-sm-6">-->
-            <!--               {{form.campus_code}}-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--        <div class="form-group row">-->
-            <!--            <div class="col-sm-3 text-right">-->
-            <!--                <label class="col-form-label">Campus Name:</label>-->
-            <!--            </div>-->
-            <!--            <div class="col-sm-6">-->
-            <!--               {{form.campus_name}}-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--        <div class="form-group row">-->
-            <!--            <div class="col-sm-3 text-right">-->
-            <!--                <label class="col-form-label">Campus Address:</label>-->
-            <!--            </div>-->
-            <!--            <div class="col-sm-6">-->
-            <!--               {{form.campus_add}}-->
-            <!--            </div>-->
-            <!--        </div>-->
                     <div class="form-group row">
                         <div class="col-sm-3 offset-sm-3">
                             <button type="submit" class="btn btn-primary form-control" >
+                                <i class="fas fa-save"></i>
                                 Save
                             </button>
+
                         </div>
                         <div class="col-sm-3">
-                            <a href="{% url 'campus_home' %}" class="btn btn-secondary form-control">Cancel</a>
+                            <a href="{% url 'campus_home' %}" class="btn btn-secondary form-control">
+                                Cancel</a>
                         </div>
                     </div>
 

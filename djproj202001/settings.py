@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',  # [10]
     'djproj202001',
-    'system_setting'  # [13]
+    'system_setting',  # [13]
+    'django_static_fontawesome',
 ]
 
 # [10]

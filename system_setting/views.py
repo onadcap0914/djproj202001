@@ -34,17 +34,17 @@ def upsert(request):
     #
     if request.method == "POST":
         form = CampusForm(request.POST)
-        form.fields['registered_by'] = request.user.username
-        form.fields['updated_by'] = request.user.username
-        form.fields['updated_date'] = datetime.datetime.now().strftime("%Y%m%d")
+        # form.fields['registered_by'] = request.user.username
+        # form.fields['registered_date'] = datetime.datetime.now().strftime("%Y%m%d")
+        # form.fields['updated_by'] = request.user.username
+        # form.fields['updated_date'] = datetime.datetime.now().strftime("%Y%m%d")
         if form.is_valid():
             try:
                 form.save()
-                return redirect('/')
+                return redirect('/system_setting/campus')
             except:
                 pass
     else:
         form = CampusForm()
-        context['form_errors'] = form.errors
+        # context['form_errors'] = form.errors
         return render(request, 'upsert.html', {'form': form, 'title': title})
-        #context['form_errors'] = form.errors
